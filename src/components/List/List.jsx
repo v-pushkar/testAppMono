@@ -8,12 +8,16 @@ class List extends Component {
       this.props.data.map((i, k) => (
         <ListGroup.Item key={k} variant={!(k % 2 == 0) ? "info" : ""}>
           <div className="newsCard">
-            
             <div className="newsText">
               <div>
                 <strong>{i.title}</strong>
               </div>
               <div>{i.description}</div>
+              <div>
+                <a href={i.url} target="_blanck">
+                  read more...
+                </a>
+              </div>
             </div>
             <div className="imgWrapp">
               <img src={i.urlToImage} />

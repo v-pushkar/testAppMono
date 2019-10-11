@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Pagination } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Paginati.scss";
 
 class Paginati extends Component {
   render() {

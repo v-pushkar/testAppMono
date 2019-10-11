@@ -7,8 +7,11 @@ class Navi extends Component {
   render() {
     return (
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/news">Monogo</Navbar.Brand>
+        <Navbar.Brand href="/">For Monogo :)</Navbar.Brand>
         <Nav className="mr-auto">
+          <NavLink className="nav-link text-light" exact to="/">
+            Home
+          </NavLink>
           <NavLink className="nav-link text-light" exact to="/news">
             News
           </NavLink>

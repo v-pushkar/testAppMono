@@ -1,6 +1,7 @@
 .newsCard {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
 
     .newsText {
         max-width: 90%;
@@ -8,6 +9,7 @@
     }
 
     .imgWrapp {
+
         max-width: 10%;
 
         img {

@@ -9,6 +9,7 @@ import {
 
 import Main from "./pages/Main";
 import NoMatch from "./pages/NoMatch";
+import Home from "./pages/Home";
 import { About } from "./pages/About/About.js";
 import Navi from "./components/Navi";
 
@@ -18,6 +19,7 @@ function App() {
       <Navi />
       <div className="container pt-4">
         <Switch>
+          <Route path={"/"} exact component={Home} />
           <Route path={"/news"} exact component={Main} />
           <Route path={"/about"} component={About} />
           <Route path={"/news/:number"} component={Main} />
