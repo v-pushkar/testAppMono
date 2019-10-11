@@ -1,0 +1,17 @@
+.newsCard {
+    display: flex;
+    // justify-content: space-between;
+
+    .newsText {
+        max-width: 90%;
+        margin-right: 25px;
+    }
+
+    .imgWrapp {
+        max-width: 10%;
+
+        img {
+            width: 100%
+        }
+    }
+}
