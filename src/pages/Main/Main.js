@@ -42,14 +42,13 @@ class Main extends Component {
     })
       .then(res => {
         const dt = res.data.articles;
-       
+
         let array = dt;
         let size = 5;
         let subarray = [];
         for (let i = 0; i < Math.ceil(array.length / size); i++) {
           subarray[i] = array.slice(i * size, i * size + size);
         }
-        
 
         this.setState({
           resData: res.data.articles,
@@ -60,14 +59,14 @@ class Main extends Component {
       })
       .catch(error => {
         console.log(error);
-      });    
+      });
   }
 
   handleSerch(e) {
     console.log("input:", e.target.value);
     let text = e.target.value;
     let arr = this.state.resData;
-    let res = arr.filter(it => new RegExp(text, "i").test(it.description));    
+    let res = arr.filter(it => new RegExp(text, "i").test(it.description));
     let array = res;
     let size = 5;
     let subarray = [];
@@ -79,7 +78,8 @@ class Main extends Component {
       serchStart: text.length,
       serchResalts: res.length,
       data: subarray,
-      listPages: subarray.length
+      listPages: subarray.length,
+      activlist: 0
     });
   }
   render() {
